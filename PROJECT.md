@@ -1,21 +1,21 @@
-# Grani USCO - Proyecto de Gestión de Commodities Agrícolas
+# Grani USCO — Landing Page de Granizados con Alcohol
 
-## 1. Análisis del Proyecto
+## Estado
+- **Versión**: 0.1.0
+- **Estado**: MVP — Landing page funcional
+- **Última actualización**: 2026-07-12
 
-### 1.1 Descripción General
+## Descripción
+Landing page para un negocio de granizados con alcohol. Sitio informativo con menú, sección "sobre nosotros", ubicación y contacto. Diseño con estética neon y glassmorphism.
 
-**Grani USCO** es una plataforma web para la gestión de granos y commodities agrícolas. El proyecto está dirigido a productores, comercializadores y compradores de granos en la región, ofreciendo herramientas para el seguimiento de precios, gestión de inventario y cotizaciones en tiempo real.
-
-### 1.2 Stack Tecnológico
-
+## Stack
 - **Framework**: Next.js 16.2.9 (App Router)
 - **Lenguaje**: TypeScript 5
 - **Estilos**: Tailwind CSS 4 con PostCSS
-- **UI Animations**: Framer Motion 12.40.0
+- **Animaciones**: Framer Motion 12.40.0
 - **Runtime**: React 19.2.4 / Node.js
 
-### 1.3 Estructura del Proyecto
-
+## Estructura del Proyecto
 ```
 grani-usco/
 ├── src/
@@ -30,179 +30,72 @@ grani-usco/
 └── next.config.ts
 ```
 
----
+## Landing Page — Secciones Implementadas
 
-## 2. MVP - Minimum Viable Product
-
-### 2.1 Features del MVP
-
-| # | Feature | Descripción | Prioridad |
-|---|---------|-------------|-----------|
-| 1 | Dashboard con precios de granos | Visualización de cotizaciones actuales | Alta |
-| 2 | CRUD básico de productos | Crear, leer, actualizar, eliminar granos | Alta |
-| 3 | Tabla de cotizaciones | Listado de precios por commodity | Alta |
-
-### 2.2 Commodities Soportados (MVP)
-
-- Maíz
-- Trigo
-- Arroz
-- Sorgo
-- Soya
-- Café
-- Cacao
-- Algodón
-
-### 2.3 Datos de Cotización
-
-| Campo | Tipo | Descripción |
-|-------|------|-------------|
-| id | string | UUID único |
-| name | string | Nombre del commodity |
-| price | number | Precio actual (COP/kg) |
-| unit | string | Unidad de medida |
-| change | number | Variación % |
-| lastUpdated | Date | Última actualización |
-
----
-
-## 3. Landing Page - Estructura Actual
-
-La landing page existente incluye:
-
-### 3.1 Navbar
+### Navbar
 - Logo "Grani USCO"
 - Navegación: Menú, Sobre nosotros, Ubicación, Contacto
 
-### 3.2 Hero Section
+### Hero Section
 - Título con efecto neon
 - Subtítulo descriptivo
 - CTA "Ver Menú"
 - Background con partículas animadas
 
-### 3.3 Sección Menú
+### Sección Menú
 - Grid de 6 productos (granizados con alcohol)
 - Cards con glassmorphism
-- Animaciones de entrada con framer-motion
+- Animaciones de entrada con Framer Motion
 
-### 3.4 Sección Sobre Nosotros
+### Sección Sobre Nosotros
 - Descripción de la empresa
 - Glassmorphism container
 
-### 3.5 Sección Ubicación
+### Sección Ubicación
 - Dirección y horarios
 - Mapa placeholder
 
-### 3.6 Footer
+### Footer
 - Brand y redes sociales
 - Enlaces rápidos
 - Información de contacto
 - Copyright
 
----
-
-## 4. Roadmap de Desarrollo
+## Roadmap
 
 ### Fase 1: Scaffolding ✅ (Completado)
-- [x] Setup del proyecto con create-next-app
-- [x] Configuración de TypeScript
-- [x] Configuración de Tailwind CSS
+- [x] Setup con create-next-app
+- [x] TypeScript configurado
+- [x] Tailwind CSS configurado
 - [x] Estructura base del proyecto
 - [x] Landing page funcional
 
-### Fase 2: MVP Core
-- [ ] Crear componentes reutilizables (Navbar, Footer, Button, Card)
-- [ ] Implementar routing con App Router
-- [ ] Crear página de Dashboard
-- [ ] Crear página de CRUD de productos
-- [ ] Crear página de Cotizaciones
+### Fase 2: Pulido de Contenido
+- [ ] Reemplazar placeholder de mapa con Google Maps embed
+- [ ] Fotos reales de los granizados (CC0 o del cliente)
+- [ ] Texto final de "Sobre Nosotros"
+- [ ] Información de contacto real (teléfono, WhatsApp, redes)
 
-### Fase 3: Backend & Datos
-- [ ] Definir modelo de datos (TypeScript interfaces)
-- [ ] Crear API routes para CRUD
-- [ ] Implementar estado con React Context o Zustand
-- [ ] Mock data para cotizaciones
+### Fase 3: SEO y Performance
+- [ ] Metadata optimizada (OG tags, description)
+- [ ] Optimización de imágenes (Next.js Image)
+- [ ] Responsive design verification en móviles
+- [ ] Lighthouse CI > 90
 
-### Fase 4: UI/UX Enhancement
-- [ ] Sistema de diseño (colores, tipografía, spacing)
-- [ ] Gráficos de precios (Recharts o similar)
-- [ ] Tablas de datos interactivas
-- [ ] Responsive design optimization
-
-### Fase 5: Funcionalidades Avanzadas
-- [ ] Búsqueda y filtros
-- [ ] Historial de precios
-- [ ] Exportación de datos (CSV/PDF)
-- [ ] Notificaciones de precio
-
-### Fase 6: Deploy & Polish
-- [ ] Optimización de Performance (Next.js Image, lazy loading)
-- [ ] SEO optimization
-- [ ] Deploy en Vercel
+### Fase 4: Deploy
+- [ ] Deploy en Vercel o Oracle Cloud
+- [ ] Dominio personalizado
 - [ ] Analytics básico
 
----
-
-## 5. Comandos Disponibles
-
+## Comandos
 ```bash
-# Desarrollo
-npm run dev          # Iniciar servidor de desarrollo (localhost:3000)
-
-# Producción
+npm run dev          # Servidor de desarrollo (localhost:3000)
 npm run build        # Build de producción
-npm run start        # Iniciar servidor de producción
-
-# Calidad
-npm run lint         # Linting con ESLint
+npm run start        # Servidor de producción
+npm run lint         # ESLint
 ```
 
----
-
-## 6. Variables de Entorno (Futuro)
-
-```env
-# Database
-DATABASE_URL=
-
-# API Keys
-MARKET_DATA_API_KEY=
-
-# Auth
-NEXTAUTH_SECRET=
-NEXTAUTH_URL=
-```
-
----
-
-## 7. Métricas de Éxito MVP
-
-- [ ] Landing page carga en < 3s
-- [ ] Dashboard muestra datos en tiempo real
-- [ ] CRUD funcional sin errores
-- [ ] Tabla de cotizaciones ordenable y filtrable
-- [ ] Diseño responsive en móviles
-
----
-
-## 8. Notas Técnicas
-
-### Framer Motion
-El proyecto usa framer-motion para animaciones. Ejemplo de uso:
-```tsx
-import { motion } from 'framer-motion';
-
-<motion.div
-  initial={{ opacity: 0, y: 50 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8 }}
-/>
-```
-
-### Tailwind CSS v4
-Tailwind v4 usa la directiva `@import "tailwindcss"` y variables CSS en `:root`.
-
-### Variables CSS
+## Design System
 ```css
 :root {
   --neon-pink: #FF2D55;
@@ -210,8 +103,11 @@ Tailwind v4 usa la directiva `@import "tailwindcss"` y variables CSS en `:root`.
   --neon-ice: #00D2FF;
 }
 ```
+- Glassmorphism: `backdrop-filter: blur()` en cards
+- Estética: neon + y2k sobre fondo oscuro
 
----
-
-*Última actualización: 2026-06-24*
-*Versión del proyecto: 0.1.0*
+## Limitations
+- El menú tiene 6 productos hardcodeados — sin CMS ni admin panel
+- El mapa es un placeholder — sin integración real
+- Sin backend ni base de datos — sitio 100% estático
+- Sin i18n — solo español
