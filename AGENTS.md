@@ -13,8 +13,8 @@
 1. Read PROJECT.md → check active phase and known limitations
 2. `git status` → ver estado del repo
 3. Verificar LSP activo: `hermes lsp status` — si no hay clientes: `hermes lsp restart`
-   **Nota**: El servidor LSP está configurado para el lenguaje del proyecto (según el stack), pero el cliente solo se conecta cuando un editor abre un archivo del tipo correspondiente. Mientras no haya un archivo abierto, `hermes lsp status` mostrará `active clients: none`; esto es esperado y no indica un problema. La fuente de verdad para tipos es `mcp__lsp_intelligence__live_diagnostics`, que debe dar 0 errores antes de hacer commit.
-4. Skills loaded automatically by the agent before writing code: based on the project's stack (e.g., for Next.js projects: nextjs-best-practices; for TypeScript: typescript-error-fixing; etc.). The agent loads the appropriate stack-specific skills without needing a file reminder.
+   **Nota en WSL**: El servidor LSP de TypeScript está instalado, pero el cliente solo se conecta cuando un editor (VS Code, etc.) abre un archivo `.ts` o `.tsx`. Mientras no haya un archivo abierto, `hermes lsp status` mostrará `active clients: none`; esto es esperado y no indica un problema. La fuente de verdad para tipos es `mcp__lsp_intelligence__live_diagnostics`, que debe dar 0 errores antes de hacer commit.
+4. Skills loaded automatically by the agent before writing code: based on the project's stack (e.g., for Electron projects: electron-desktop-dev; for Next.js: nextjs-best-practices; for Go: go-environment-setup, etc.). The agent loads the appropriate stack-specific skills without needing a file reminder.
 5. For tasks >1 archivo or UI work: the agent thinks first about what it's going to build, shows mockups if UI, and only then writes code. No intermediate .md files — design lives inline in PROJECT.md if needed.
 6. **LSP gate**: `mcp__lsp_intelligence__live_diagnostics` en archivos modificados — 0 errores
 7. **Code review gate**: `delegate_task` con skill `code-review-and-quality` — todos los findings addressados
