@@ -1,6 +1,6 @@
 # PROJECT.md — Grani USCO
 
-> **Estado:** Activo | **Versión:** 0.1.0 | **Última actualización:** 2026-07-31
+> **Estado:** Activo | **Versión:** 0.1.0 | **Última actualización:** 2026-08-04
 
 ---
 
@@ -114,6 +114,7 @@ Tokens de color (`--neon-pink`, `--neon-green`, `--neon-ice`) + `backdrop-filter
 |------|-------------|--------|--------------|
 | Fase 1 | Scaffolding Next.js + TS + Tailwind + estructura base + landing funcional | 88b72a7 | `npm run build` verde; verificación visual |
 | Fase 1.1 | robots.ts, sitemap.ts, GitHub templates CI 3-layer | eebf944 | `/robots.txt` + `/sitemap.xml` sirven; CI workflow |
+| Fase 1.2 | README project-specific docs, SEO features table, badges — PR #2 (merged) | 93fa944 | PR #2 merged 2026-07-31; README updated with stack, SEO table, badges |
 
 ### Próximos Pasos (Backlog)
 
