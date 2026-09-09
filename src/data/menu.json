@@ -1,0 +1,50 @@
+[
+  {
+    "id": "tropical-bliss",
+    "name": "Tropical Bliss",
+    "description": "Piña, coco, ron blanco y toque de lima",
+    "price": 12000,
+    "accent": "pink",
+    "image": "/drinks/tropical-bliss.png"
+  },
+  {
+    "id": "green-fury",
+    "name": "Green Fury",
+    "description": "Matcha, kiwi, vodka y miel de agave",
+    "price": 13000,
+    "accent": "green",
+    "image": "/drinks/green-fury.png"
+  },
+  {
+    "id": "ice-dragon",
+    "name": "Ice Dragon",
+    "description": "Maracuyá, guaraná, tequila blanco y chile tajín",
+    "price": 11000,
+    "accent": "ice",
+    "image": "/drinks/ice-dragon.png"
+  },
+  {
+    "id": "strawberry-fields",
+    "name": "Strawberry Fields",
+    "description": "Fresa, leche condensada, ron oscuro y chocolate blanco",
+    "price": 12500,
+    "accent": "pink",
+    "image": "/drinks/strawberry.png"
+  },
+  {
+    "id": "mango-tango",
+    "name": "Mango Tango",
+    "description": "Mango, chile, tamarindo y mezcal",
+    "price": 13500,
+    "accent": "green",
+    "image": "/drinks/mango-tango.png"
+  },
+  {
+    "id": "blue-lagoon",
+    "name": "Blue Lagoon",
+    "description": "Curacao azul, piña, ron blanco y crema de coco",
+    "price": 12000,
+    "accent": "ice",
+    "image": "/drinks/blue-lagoon.png"
+  }
+]
